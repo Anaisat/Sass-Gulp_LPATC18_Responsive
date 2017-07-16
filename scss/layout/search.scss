@@ -1,0 +1,100 @@
+
+/* Scss Document */
+
+/* Search*/
+
+.search{
+  display: flex;
+  text-align: center;
+    span a{
+    color: $white-two;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 45px;
+    }
+    @include breakpoint(mobileonly) {
+      display: none;
+    }
+}
+
+.search-bar {
+  padding: 35px;
+  background-color: $earth;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+    span a {
+      color: $white-two;
+      position: absolute;
+      margin-top: 15px;
+      width: 150px;
+      margin-left: 45px;
+    }
+    @include breakpoint(mobileonly) {
+      display: flex;
+      padding: 20px 32px 20px 32px;
+      span {
+        @include breakpoint(mobileonly) {
+          display: none;
+      }
+    }
+    }
+}
+
+.title {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0px 0 20px 0;
+  letter-spacing: .03em;
+  color: #ebebeb;
+  @include breakpoint(mobileonly) {
+    font-size: 18px;
+    letter-spacing: normal;
+  }
+}
+
+form {
+  @include breakpoint(mobileonly) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+[type="search"] {
+  width: 526px;
+  height: 47px;
+  background-color: $white-three;
+  border: solid 1px $dark-peach;
+  font-style: italic;
+  padding: 20px;
+  letter-spacing: 0.06em;
+  font-family: opensans;
+  font-size: 14px;
+  @include breakpoint(mobileonly) {
+    padding: 18px;
+    letter-spacing: normal;
+    font-size: 16px;
+  }
+}
+
+[type="submit"].flex-menu-item {
+  position: absolute;
+  background-color: $white-three;
+  border: solid 1px $dark-peach;
+  width: 65px;height: 47px;
+  margin-left: -6px;
+  @include breakpoint(mobileonly) {
+    position: inherit;
+    padding-right: 20px;
+    border-left: 0;
+    width: auto;
+    height: auto;
+    color: $charcoal-grey;
+    font-size: 16px;
+  }
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+}

@@ -1,0 +1,30 @@
+
+/* Scss Document */
+
+/*Header*/
+
+header {
+  display: flex;
+  margin: 20px 0 0 10px;
+    @include breakpoint(mobileonly) {
+      width: auto;
+      margin: auto;
+    }
+    h1 div {
+        @include h1;
+        width: 292px;
+        height: 17px;
+        padding-top: 10px;
+    }
+}
+
+h1 {
+  img{
+    width: 170px;
+  }
+  a {
+    @include breakpoint(mobileonly) {
+      display: none;
+    }
+  }
+}

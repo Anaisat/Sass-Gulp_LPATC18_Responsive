@@ -1,0 +1,261 @@
+
+/* Scss Document */
+
+
+
+/*Navigation*/
+
+nav {
+  padding: 30px 0 0 0px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  @include breakpoint(mobileonly) {
+    display: none;
+  }
+}
+
+.nav-item {
+  display: flex;
+    li {
+        padding: 15px;
+          a {
+            padding: 5px 5px;
+            font-size: 18px;
+            color: $charcoal-grey;
+            text-transform: uppercase;
+            text-decoration: none;
+          }
+        }
+      }
+
+.sub-menu{
+  display: flex;
+  flex-direction: row-reverse;
+  @include breakpoint(mobileonly) {
+      display: none;
+    }
+}
+
+.hamburger{
+  background: none;
+  line-height: 35px;
+  border: 0;
+  color: $charcoal-grey;
+  width: 135px;
+  top: 30px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  text-align: -webkit-center;
+}
+
+.cross{
+  font-size: 6em;
+  width: 135px;
+  height: 135px;
+  margin-top: -50px;
+  padding-top: 80px;
+  text-align: center;
+  cursor: pointer;
+  color: #ebebeb;
+  border: 0;
+  outline: none;
+  background: #455763;
+}
+
+.menu-magnifying-glass{
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  width: 1280px;
+  height: 167px;
+  margin-top: 79px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #a65447;
+  justify-content: center;
+      a {
+        color: $white-two;
+      }
+  }
+
+  .menu-magnifying-glass div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .magnifying-glass{
+    background: none;
+    color: $slate;
+    border: 0;
+    width: 135px;
+    margin-top: 35px;
+    font-family: "awesome";
+    text-align: center;
+  }
+
+  .magnifying-glass-2{
+    font-family: 'awesome';
+    width: 135px;
+    margin-top: -30px;
+    padding-top: 65px;
+    cursor: pointer;
+    color: #ebebeb;
+    border: 0;
+    outline: none;
+    background: #a65447;
+    justify-content: center;
+  }
+
+
+.menu {
+  margin-top: 79px;
+  z-index: 2;
+  width: 1280px;
+  background-color: $slate;
+  position: absolute;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu ul {
+  @include h5;
+    li {
+      padding:15px 0 0 0;
+      color: $white-two;
+      display: flex;
+      justify-content: space-between;
+      a {
+        color: $white-two;
+        text-decoration: none;
+        font-weight: normal;
+      }
+    }
+  }
+.menu .sub-menu-links {
+  display: flex;
+  ul {
+    margin-right: 170px
+  }
+}
+.menu .sub-menu-login {
+  display: flex;
+    li a {margin: auto;
+    }
+}
+
+
+
+
+
+/* Navigation Responsive */
+
+.menu-toggle-mobile {
+  display: flex;
+  width: auto;
+  padding: 10px;
+  justify-content: space-between;
+  background-color:$slate;
+  width: 100%;
+  z-index: 2;
+  @include breakpoint(desktop) {
+    display: none;
+  }
+}
+
+.brand {
+  margin-left: 12px;
+  margin-top: 5px;
+}
+
+.sub-menu-mobile{
+  padding: 20px 20px 0 0;
+  background-color: #455763;
+}
+
+.hamburger-mobile{
+  font-size: 10px;
+  font-style: normal;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  text-align: center;
+  color: $white-three;
+  border: 0;
+  outline: none;
+}
+
+.cross-mobile{
+  font-size: 3em;
+  text-align: center;
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+  color: $white-three;
+  border: 0;
+  outline: none;
+    span {
+    margin-top: -30px;
+    display: flex;
+    padding-left: inherit;
+    font-size: 10px;
+    }
+}
+
+.menu-mobile {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  background-color: #455763;
+  width: 100%;
+  padding: 0 35px 0;
+  opacity: .95;
+}
+
+.menu-mobile ul {
+  font-family: opensans;
+  font-size: 18px;
+  margin-right: auto;
+  line-height: 3;
+  list-style: none;
+    li {
+      color: $white-three;
+      border-bottom: #dddddd 1px solid;
+      a {
+        color: $white-two;
+        text-decoration: none;
+        font-weight: normal;
+      }
+      a:hover {
+        color: $greyish;
+      }
+      i {
+        float: right;
+        margin-top:  15px;
+        font-size: 30px;
+      }
+    }
+  }
+
+.sub-menu-mobile-three, .sub-menu-mobile-six {
+  color: $greyish;
+}
+.sub-menu-mobile-four, .sub-menu-mobile-seven{
+    padding-left: 30px;
+  }
+
+  .between-mobile {
+    display: flex;
+    justify-content: space-between;
+      a {
+      color: $white-two;
+      text-decoration: none;
+      }
+  }

@@ -1,0 +1,67 @@
+
+/* Scss Document */
+
+/*Sidebar*/
+
+.sidebar {
+  width: 405px;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    @include h2;
+  }
+  h4 {
+    @include h4;
+  }
+  @include breakpoint(mobileonly) {
+    width: auto;
+    h2{
+        @include h2-mobile;
+      }
+    h4 {
+        @include h3-mobile;
+      }
+    }
+  }
+.last-comments {
+  height: 260px;
+  display: block;
+  float: left;
+}
+
+.comments {
+  width: 407px;
+  background-color: $white;
+  margin:15px 0 15px 0;
+  padding-bottom: 45px;
+  @include breakpoint(mobileonly) {
+  width: auto;
+  padding-bottom: 30px;
+  margin: 5px 0 0;
+  }
+}
+.bkgnd-icon {
+  transform: rotate(-5deg);
+  font-size: 155px;
+  color: rgba(235, 235, 235, 0.45);
+  position: absolute;display: flex;
+  margin-left: -15px;
+  margin-top: -10px;
+  @include breakpoint(mobileonly) {
+    margin-top: -20px;
+    font-size: 130px;
+    }
+}
+
+.comment-small {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.sidebar .comments-button {
+  margin-top: auto;
+  @include breakpoint(mobileonly) {
+  margin-top: 40px;
+  }
+}

@@ -1,0 +1,78 @@
+
+/* Scss Document */
+
+/* Footer*/
+footer {
+  display: flex;
+  background-color: $charcoal-grey;
+  padding: 10px;
+  @include breakpoint(mobileonly) {
+    flex-direction: column;
+  }
+}
+
+.footer-block {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color:$white-three;
+    text-align: center;
+    a {
+      text-decoration: none;
+    }
+    @include breakpoint(mobileonly) {
+      img {
+        width: 150px;
+        padding-top: 10px;
+      }
+    }
+  }
+
+.footer-block p {
+  padding: 40px 0px 40px;
+  @include breakpoint(mobileonly) {
+    padding: 30px 0 0;
+    margin: auto;
+  }
+}
+
+.footer-title {
+  font-weight: bold;
+  font-family: Montserrat;
+  letter-spacing: 0.01em;
+  @include breakpoint(mobileonly) {
+    display: inherit;
+    font-size: 12px;
+  }
+}
+.footer-title-2 {
+  font-family: FiraMono;
+  letter-spacing: 0.2em;
+  @include breakpoint(mobileonly) {
+    font-size: 16px;
+  }
+}
+
+.footer-contact {
+  list-style-type: none;
+  font-size: 14px;
+    a {
+      color: $white-three;
+      line-height: 2.83;
+    }
+  }
+
+.social-link {
+  list-style-type: none;
+  border: solid 2px $white-three;
+  margin: 30px;
+  padding: 15px;
+    a {
+      color: $white-three;
+      padding: 10px;
+      font-size: 14px;
+  }
+  @include breakpoint(mobileonly) {
+    display: inherit;
+  }
+}
